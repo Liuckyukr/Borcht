@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ukrainian borscht</title>
+    <meta name="description" content="Borscht has been a symbol of the unification of Ukraine-delicious dish.">
+    <title>Delicious soup - Ukrainian borscht</title>
     <style>
-        body {
-            background-color: rgb(253, 251, 127);
+        :root {
+            --first-color: rgb(253, 251, 127);
+            --second-color: rgb(20, 53, 161);
+            --third--color:crimson;
         }
-        h1 {
-            text-align: center;
-            color: rgb(253, 251, 127);
-            font-size: 35px;
+        body {
+            background-color: var(--first-color);
         }
         h2 {
             text-align: center;
-            color: crimson;
-            border: 1px solid rgb(253, 251, 127);
+            color: var(--first-color);
+            font-size: 35px;
+        }
+        h1 {
+            text-align: center;
+            color: var(--third--color);
+            border: 1px solid var(--first-color);
             padding: 10px;
             font-size: 40px;
             border-radius: 4px;
@@ -32,14 +38,14 @@
             line-height: 2;
             font-size: 20px;
             margin: 15px 0 10px;
-            color: rgb(20, 53, 161);
+            color: var(--second-color);
         }
         .recipe {
             display: block;
             margin: 0 auto;
             font-size: 25px;
             text-decoration: none;
-            color: crimson;
+            color: var(--third--color);
         }
         .recipe:hover {
             text-decoration: underline;
@@ -48,8 +54,8 @@
         button {
             display: block;
             font-size: 20px;
-            color: rgb(20, 53, 161);
-            background: rgb(253, 251, 127);
+            color: var(--second-color);
+            background: var(--first-color);
             border: none;
             border-radius: 6px;
             margin: 20px auto;
@@ -59,8 +65,8 @@
             cursor: pointer;
         }
         button:hover {
-            color: rgb(253, 251, 127);
-            background: rgb(20, 53, 161);
+            color: var(--first-color);
+            background: var(--second-color);
             cursor: pointer;
         }
         .box {
@@ -69,18 +75,38 @@
             padding: 30px 60px;
             background-color: rgb(148, 175, 250);
         }
+        @media (max-width: 700px) {
+            h2 {
+                font-size: 28px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .recipe {
+                font-size: 20px;
+            }
+            button {
+                font-size: 17px;
+            }
+            .box {
+                padding: 10%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="box">
-       <h1>
+       <h2>
          <em>
             A dish you will fall in love with once you try it 
          </em>
-       </h1>
-       <h2>
-           Ukrainian borscht
        </h2>
+       <h1>
+           Ukrainian borscht
+       </h1>
        <img src = "./борщ 1.jpg" alt="Ukrainian borscht" width="600"
        />
        <p>
@@ -93,7 +119,7 @@
            </strong>
        </p>
        <a href="https://www.youtube.com/watch?v=gOrE-3ISQ3I"
-           target="_blank" class="recipe">
+           target="_blank" title="Video recipe of Ukrainian borscht" class="recipe">
            <strong>
            If you want to cook and taste borscht, come here
            </strong>
