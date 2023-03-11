@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukrainian borscht</title>
+    <style>
+        body {
+            background-color: rgb(253, 251, 127);
+        }
+        h1 {
+            text-align: center;
+            color: rgb(253, 251, 127);
+            font-size: 35px;
+        }
+        h2 {
+            text-align: center;
+            color: crimson;
+            border: 1px solid rgb(253, 251, 127);
+            padding: 10px;
+            font-size: 40px;
+            border-radius: 4px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        p {
+            line-height: 2;
+            font-size: 20px;
+            margin: 15px 0 10px;
+            color: rgb(20, 53, 161);
+        }
+        .recipe {
+            display: block;
+            margin: 0 auto;
+            font-size: 25px;
+            text-decoration: none;
+            color: crimson;
+        }
+        .recipe:hover {
+            text-decoration: underline;
+            color: rgb(241, 43, 82);
+        }
+        button {
+            display: block;
+            font-size: 20px;
+            color: rgb(20, 53, 161);
+            background: rgb(253, 251, 127);
+            border: none;
+            border-radius: 6px;
+            margin: 20px auto;
+            padding: 15px 20px;
+            box-shadow: 5px 5px 10px rgba (0, 0, 0, 0,3);
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+        }
+        button:hover {
+            color: rgb(253, 251, 127);
+            background: rgb(20, 53, 161);
+            cursor: pointer;
+        }
+        .box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            background-color: rgb(148, 175, 250);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <h1>
+         <em>
+            A dish you will fall in love with once you try it 
+         </em>
+       </h1>
+       <h2>
+           Ukrainian borscht
+       </h2>
+       <img src = "./борщ 1.jpg" alt="Ukrainian borscht" width="600"
+       />
+       <p>
+          <strong>
+            <em>
+             Back in the days of Kievan Rus - Ukraine, the prince wanted to create a dish that would consist of all the famous and favorite ingredients of Ukrainians. He ordered that the most beloved product be brought from all regions. Ukrainians began to bring: some cabbage, some onions, some carrots, beets, etc. The best chefs combined all this into one dish and it turned out to be an unsurpassedly delicious soup. It was called borscht.
+             Since then, borscht has been a symbol of the unification of Ukraine. <br> And no matter what happened in life, a large family always gathered at the home table eating this delicious dish with sour cream, black bread, garlic and fat.
+             Probably, there is no person in the world who would try this dish and remain indifferent to it.
+            </em>
+           </strong>
+       </p>
+       <a href="https://www.youtube.com/watch?v=gOrE-3ISQ3I"
+           target="_blank" class="recipe">
+           <strong>
+           If you want to cook and taste borscht, come here
+           </strong>
+       </a>
+        <button>
+            Have you ever eaten Ukrainian borscht?
+        </button>
+    </div>
+    <script>
+        function you() {
+            let name=prompt("What is your name?");
+            let eat=prompt(name +", have you ever eaten Ukrainian borscht?");
+                if (eat==="yes") {
+                    alert ("Congratulations, "+ name +"! You know what it is to be happy from a meal 😋");
+                } else {
+                    alert ("Dear, " + name +", you must try borscht and be happier for it 😋")
+                }
+        }
+        let helloU = document.querySelector("button");
+        helloU.addEventListener("click", you);
+    </script>
+</body>
+</html>
